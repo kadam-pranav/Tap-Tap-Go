@@ -1,0 +1,299 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(252, 246, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    width: 100%;
+    height: 8%;
+    background-color: rgba(0, 0, 0, 0.895);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header p{
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    color: rgb(0, 0, 46);
+    color: white;
+}
+
+#taskdiv{
+    width: 130px;
+    height: 130px;
+    background-color: rgb(248, 219, 181);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 5px;
+}
+#task{
+    font-size: 80px;
+}
+#taskdiv span{
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+#answerinp{
+    height: 55px;
+    width: 200px;
+    border-radius: 20px;
+    font-size: 35px;
+    padding-left: 43%;
+    border: 1.5px solid black;
+}
+#answerdiv{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    padding: 15px;
+}
+#answerdiv p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#resultdiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 10px;
+}
+#correctdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    background-color: rgb(113, 177, 113);
+    padding-bottom: 5px;
+
+}
+
+#correctdiv input{
+    height: 45px;
+    width: 100px;
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 2px;
+}
+
+#correctdiv p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgb(30, 1, 47);
+  
+}
+
+#wrongdiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    background-color: rgb(219, 96, 96);
+    padding-bottom: 5px;
+}
+
+#wrongdiv input{
+    height: 45px;
+    width: 100px;
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 2px;
+}
+
+#wrongdiv p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#misseddiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+    background-color: rgb(206, 162, 81);
+    padding-bottom: 5px;
+}
+
+#misseddiv input{
+    height: 45px;
+    width: 100px;
+    font-size: 30px;
+    font-weight: 200;
+    padding-left: 2px;
+}
+
+#misseddiv p{
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+#mode{
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:10px;
+}
+#mode button{
+    height: 40px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: bisque;
+    color:  rgb(30, 1, 47);
+}
+#mode p{
+    font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgb(30, 1, 47);
+}
+
+#preferance{
+    width: 100vw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap:10px;
+    
+}
+#preferance button{
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: bisque;
+    color:  rgb(30, 1, 47);
+}
+#preferance p{
+    font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: rgb(30, 1, 47);
+}
+
+#start{
+    width: 100px;
+    height: 45px;
+    background-color: rgb(232, 118, 124);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+}
+#stop{
+    width: 100px;
+    height: 45px;
+    background-color: rgb(232, 118, 124);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+}
+#referesh{
+    width: 100px;
+    height: 45px;
+    background-color: rgb(232, 118, 124);
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 15px;
+}
+#startdiv{
+    width: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#timer3{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display:none;
+
+}
+#timer3 span{
+    font-size: 300px;
+   
+}
+#beforestart{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.839);
+    position: absolute;
+    display: flex;
+    align-items:center;
+  
+    flex-direction: column;
+}
+#beforestart p{
+    color: white;
+    letter-spacing: 1.4px;
+    font-size: 30px;
+    font-weight: 200;
+    width: 100%;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+}
+#btnbeforestart{
+    width: 140px;
+    height: 45px;
+    background-color: white;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#btnbeforestart:hover{
+    box-shadow:0 0 5px white;
+   
+}
+
+
+

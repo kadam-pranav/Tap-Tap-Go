@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Tap-Tap-Go</title>
+   <link rel="icon" href="logo.png">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="beforestart">
+            <br><br><br><br><br><br><br>
+            <p>Boost your typing skills with this interactive tool  Tap-Tap-Go!</p>
+            <p>Choose from Easy, Medium, or Hard modes, and practice the way you like with options such as Home Row, All Characters, or All Characters + Numbers. Learn step by step, improve accuracy, and gain confidence while having fun.you will get one by one Charecter in task box and you have to Type same in the Answer Box</p>
+            <br>
+            <button id="btnbeforestart" onclick="enter()">Ok Let's Play</button>
+    </div>
+    <header>
+        <p>Tap-Tap-Go</p>
+    </header>
+    <main>
+        <div id="taskdiv">
+            <p id="task">--</p>
+            <span>Task :</span>
+        </div>
+
+        <div id="answerdiv">
+        <input type="text" maxlength="1" id="answerinp" placeholder="--">
+        <p>Answer ↑</p>
+        </div> 
+    
+        <div id="resultdiv">
+            <div id="correctdiv">
+                <input type="number" readonly id="Correct">
+                <p>Correct ↑</p>
+            </div>
+            <div id="wrongdiv">
+                 <input type="number" readonly id="Wrong">
+                 <p> Wrong ↑</p>
+            </div>
+            <div id="misseddiv">
+                 <input type="number" readonly id="Missed">
+                 <p>Missed ↑</p>
+            </div>
+
+        </div>
+
+    </main>
+
+    <div id="mode">
+            <p>Choose Mode : <sup>*</sup></p>
+            <button class="choosemode" id="easymode" title="It will take Gap for 2.5 Seconds"  data-sp="2.5">Easy</button>
+            <button class="choosemode" id="mediummode" title="It will take Gap for 1.5 Seconds" data-sp="1.5">Medium</button>
+            <button class="choosemode" id="hardmode" title="It will take Gap for 1 Seconds" data-sp="1">Hard</button>
+    </div>
+    <div id="preferance">
+        <p>Choose Preferance : <sup>*</sup></p>
+        <button class="pref" title="It will take random character from home row" data-p="h">Home-Row</button>
+        <button class="pref" title="It will take random character from home row + top row"  data-p="h+t">Home-Row + Top</button>
+        <button class="pref" title="It will take random character from home row + Bottom row"  data-p="h+b">Home-Row + Bottom</button>
+        <button class="pref" title="It will take any character randomly"  data-p="all">All Character</button>
+        <button class="pref" title="It will take any character + number randomly"  data-p="all+n">All Character + Num</button>
+    </div>
+    <div id="startdiv">
+    <button id="start">
+        Start
+    </button>
+     <button id="stop" onclick="stop()">
+         Stop
+    </button>
+    <button id="referesh" onclick="referesh()">
+        Referesh
+    </button>
+    </div>
+
+    <div id="timer3">
+        <span id="timercon"></span>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
