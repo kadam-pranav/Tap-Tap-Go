@@ -63,7 +63,10 @@ function clearcolorpre(){
 }
 
 startbtn.addEventListener('click',()=>{
-    if(ismode==true && ispreferance==true){
+    if(isrunning==true){
+        
+    }
+    else if(ismode==true && ispreferance==true){
         startbtn.style.backgroundColor='rgb(131, 235, 117)'
         document.getElementById('stop').style.backgroundColor='rgb(232, 118, 124)'
         timer3.style.display='flex';
@@ -72,6 +75,7 @@ startbtn.addEventListener('click',()=>{
     else{
         alert("Please select Mode and Preferance")
     }
+        
 })
 let seconds=3;
 let timerinterval;
@@ -436,3 +440,4 @@ function stop(){
     
 
 }
+
