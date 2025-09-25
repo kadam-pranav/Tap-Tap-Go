@@ -18,11 +18,12 @@ let previous=null,trmpprev;
 let isrunning=false;
 let correctcount=0,wrongcount=0,missedcount=0;
 answer.addEventListener('input',()=>{
+    if(isrunning==true){
     if(answer.value==task.innerHTML)
         correct.value=++correctcount;
     else 
         wrong.value=++wrongcount;
-
+    }
 })
 
 for(let btn of mode){
@@ -433,4 +434,5 @@ function stop(){
         alert("Game not Started Yet")
     }
     
+
 }
