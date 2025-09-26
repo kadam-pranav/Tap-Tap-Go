@@ -12,6 +12,7 @@ let ismode=false;
 let ispreferance=false;
 let speed;
 let prefstyle;
+let isstopActive=false;
 let inter;
 let randomValue;
 let previous=null,trmpprev;
@@ -63,13 +64,14 @@ function clearcolorpre(){
 }
 
 startbtn.addEventListener('click',()=>{
-    if(isrunning==true){
+    if(isrunning==true && isstopActive==false){
         
     }
     else if(ismode==true && ispreferance==true){
         startbtn.style.backgroundColor='rgb(131, 235, 117)'
         document.getElementById('stop').style.backgroundColor='rgb(232, 118, 124)'
         timer3.style.display='flex';
+        isstopActive=false
         showtime()
     }    
     else{
@@ -430,6 +432,7 @@ function enter(){
 }
 function stop(){
     if(isrunning==true){
+     isstopActive=true
     clearInterval(inter)
     document.getElementById('stop').style.backgroundColor='rgb(131, 235, 117)'
     startbtn.style.backgroundColor='rgb(232, 118, 124)'
@@ -440,4 +443,5 @@ function stop(){
     
 
 }
+
 
